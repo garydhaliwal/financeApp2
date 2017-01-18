@@ -1,5 +1,3 @@
-import java.text.DecimalFormat;
-
 import android.util.Log;
 
 import com.android.uiautomator.core.UiObject;
@@ -22,9 +20,7 @@ public class FinanceAppTest extends UiAutomatorTestCase {
 	UiObject eps = new UiObject(new UiSelector().resourceId("org.dayup.stocks:id/details_epsText"));		
 	UiObject back1 = new UiObject(new UiSelector().className("android.widget.ImageButton"));		
 	UiObject back2 = new UiObject(new UiSelector().resourceId("org.dayup.stocks:id/back"));		
-	
-	DecimalFormat df = new DecimalFormat("#.00");
-	
+		
 	
 	public void testStockData() throws UiObjectNotFoundException {
 		
